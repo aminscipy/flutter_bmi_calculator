@@ -20,14 +20,16 @@ class _Page1Row2State extends State<Page1Row2> {
               height: 190,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.red,
+                color: Colors.black26,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text('Height',
-                      style:
-                          TextStyle(fontSize: 30, fontWeight: FontWeight.w500)),
+                      style: TextStyle(
+                          fontSize: 30,
+                          color: Colors.blueGrey,
+                          fontWeight: FontWeight.w500)),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -36,12 +38,16 @@ class _Page1Row2State extends State<Page1Row2> {
                       Text(
                         height.toString(),
                         style: const TextStyle(
-                            fontSize: 65, fontWeight: FontWeight.bold),
+                            fontSize: 65,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blueGrey),
                       ),
                       const Text(
                         'CM',
                         style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.blueGrey),
                       )
                     ],
                   ),
@@ -49,7 +55,7 @@ class _Page1Row2State extends State<Page1Row2> {
                       value: height.toDouble(),
                       min: 120,
                       max: 220,
-                      activeColor: Colors.green,
+                      activeColor: Colors.blueGrey,
                       inactiveColor: Colors.black,
                       onChanged: (newValue) {
                         setState(() {

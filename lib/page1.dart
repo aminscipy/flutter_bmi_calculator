@@ -1,7 +1,9 @@
+import 'package:bmi_calculator/page2.dart';
 import 'package:flutter/material.dart';
 import 'page1row1.dart';
 import 'page1row2.dart';
 import 'page1row3.dart';
+import 'bottom_button.dart';
 
 class InputPage extends StatefulWidget {
   const InputPage({Key? key}) : super(key: key);
@@ -18,7 +20,7 @@ class _InputPageState extends State<InputPage> {
           title: const Text(
             'BMI Calculator',
             style: TextStyle(
-                fontSize: 25, color: Colors.lime, fontWeight: FontWeight.bold),
+                fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
           ),
           centerTitle: true,
         ),
@@ -29,11 +31,12 @@ class _InputPageState extends State<InputPage> {
             const Page1Row1(),
             const Page1Row2(),
             const Page1Row3(),
-            Container(
-              height: 50,
-              margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10), color: Colors.red),
+            BottomButton(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Page2()));
+              },
+              function: 'Calculate',
             )
           ],
         ));

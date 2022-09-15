@@ -22,7 +22,8 @@ class _Page1Row1State extends State<Page1Row1> {
           child: Page1Row1Sub(
             gender: 'Male',
             icon: FontAwesomeIcons.mars,
-            color: selectedGender == Gender.male ? Colors.green : Colors.red,
+            color:
+                selectedGender == Gender.male ? Colors.black45 : Colors.black26,
           ),
           onTap: () {
             setState(() {
@@ -39,8 +40,9 @@ class _Page1Row1State extends State<Page1Row1> {
           child: Page1Row1Sub(
               gender: 'Female',
               icon: FontAwesomeIcons.venus,
-              color:
-                  selectedGender == Gender.female ? Colors.green : Colors.red),
+              color: selectedGender == Gender.female
+                  ? Colors.black45
+                  : Colors.black26),
         ),
       ],
     );
@@ -78,11 +80,15 @@ class _Page1Row1SubState extends State<Page1Row1Sub> {
           Icon(
             widget.icon,
             size: 80,
+            color: Colors.blueGrey,
           ),
           const SizedBox(height: 10),
           Text(
             widget.gender,
-            style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
+            style: const TextStyle(
+                fontSize: 30,
+                fontWeight: FontWeight.w500,
+                color: Colors.blueGrey),
           )
         ],
       ),

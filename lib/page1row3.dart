@@ -18,14 +18,17 @@ class _Page1Row3State extends State<Page1Row3> {
       Container(
           margin: const EdgeInsets.all(10),
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10), color: Colors.red),
+              borderRadius: BorderRadius.circular(10), color: Colors.black26),
           height: 170,
           width: 170,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text('Weight',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500)),
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.blueGrey)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -33,10 +36,15 @@ class _Page1Row3State extends State<Page1Row3> {
                 children: [
                   Text(weight.toString(),
                       style: const TextStyle(
-                          fontSize: 60, fontWeight: FontWeight.w500)),
+                          fontSize: 60,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.blueGrey)),
                   const Text(
                     'Kg',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey),
                   )
                 ],
               ),
@@ -45,8 +53,8 @@ class _Page1Row3State extends State<Page1Row3> {
                 children: [
                   TextButton(
                       style: TextButton.styleFrom(
-                          primary: Colors.white,
-                          backgroundColor: Colors.green,
+                          primary: Colors.black,
+                          backgroundColor: Colors.blueGrey,
                           shape: const CircleBorder()),
                       onPressed: () {
                         setState(() {
@@ -56,8 +64,8 @@ class _Page1Row3State extends State<Page1Row3> {
                       child: const Icon(FontAwesomeIcons.plus)),
                   TextButton(
                       style: TextButton.styleFrom(
-                          primary: Colors.white,
-                          backgroundColor: Colors.green,
+                          primary: Colors.black,
+                          backgroundColor: Colors.blueGrey,
                           shape: const CircleBorder()),
                       onPressed: () {
                         setState(() {
@@ -72,14 +80,17 @@ class _Page1Row3State extends State<Page1Row3> {
       Container(
           margin: const EdgeInsets.all(10),
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10), color: Colors.red),
+              borderRadius: BorderRadius.circular(10), color: Colors.black26),
           height: 170,
           width: 170,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text('Age',
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500)),
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.blueGrey)),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -87,10 +98,15 @@ class _Page1Row3State extends State<Page1Row3> {
                 children: [
                   Text(age.toString(),
                       style: const TextStyle(
-                          fontSize: 60, fontWeight: FontWeight.w500)),
+                          fontSize: 60,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.blueGrey)),
                   const Text(
                     'Years',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blueGrey),
                   )
                 ],
               ),
@@ -99,8 +115,8 @@ class _Page1Row3State extends State<Page1Row3> {
                 children: [
                   TextButton(
                       style: TextButton.styleFrom(
-                          primary: Colors.white,
-                          backgroundColor: Colors.green,
+                          primary: Colors.black,
+                          backgroundColor: Colors.blueGrey,
                           shape: const CircleBorder()),
                       onPressed: () {
                         setState(() {
@@ -110,8 +126,8 @@ class _Page1Row3State extends State<Page1Row3> {
                       child: const Icon(FontAwesomeIcons.plus)),
                   TextButton(
                       style: TextButton.styleFrom(
-                          primary: Colors.white,
-                          backgroundColor: Colors.green,
+                          primary: Colors.black,
+                          backgroundColor: Colors.blueGrey,
                           shape: const CircleBorder()),
                       onPressed: () {
                         setState(() {
