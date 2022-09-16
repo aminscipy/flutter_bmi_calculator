@@ -4,6 +4,7 @@ import 'page1row1.dart';
 import 'page1row2.dart';
 import 'page1row3.dart';
 import 'bottom_button.dart';
+import 'calculation.dart';
 
 class InputPage extends StatefulWidget {
   const InputPage({Key? key}) : super(key: key);
@@ -33,8 +34,15 @@ class _InputPageState extends State<InputPage> {
             const Page1Row3(),
             BottomButton(
               onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Page2()));
+                Calculation calc = Calculation(height: height, weight: weight);
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Page2(
+                              resultText: calc.calculateBmi(),
+                              interpretationText: calc.getInterpretation(),
+                              bmiResult: calc.getResult(),
+                            )));
               },
               function: 'Calculate',
             )

@@ -2,7 +2,15 @@ import 'package:flutter/material.dart';
 import 'bottom_button.dart';
 
 class Page2 extends StatelessWidget {
-  const Page2({Key? key}) : super(key: key);
+  const Page2(
+      {Key? key, this.bmiResult, this.interpretationText, this.resultText})
+      : super(key: key);
+  // ignore: prefer_typing_uninitialized_variables
+  final bmiResult;
+  // ignore: prefer_typing_uninitialized_variables
+  final resultText;
+  // ignore: prefer_typing_uninitialized_variables
+  final interpretationText;
 
   @override
   Widget build(BuildContext context) {
@@ -44,27 +52,29 @@ class Page2 extends StatelessWidget {
                   color: Colors.black26),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
+                children: [
                   Text(
-                    'Fat',
-                    style: TextStyle(
+                    bmiResult,
+                    style: const TextStyle(
                         fontSize: 30,
                         color: Colors.blueGrey,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 70,
                   ),
                   Text(
-                    'Fat',
-                    style: TextStyle(fontSize: 80, color: Colors.blueGrey),
+                    resultText,
+                    style:
+                        const TextStyle(fontSize: 80, color: Colors.blueGrey),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 70,
                   ),
                   Text(
-                    'your bmi is this and you should do this',
-                    style: TextStyle(fontSize: 20, color: Colors.blueGrey),
+                    interpretationText,
+                    style:
+                        const TextStyle(fontSize: 20, color: Colors.blueGrey),
                   ),
                 ],
               ),
